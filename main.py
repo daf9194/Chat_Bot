@@ -31,7 +31,8 @@ def range_price(message):
 def range_dis(message):
     """Принимает диапазон цен от пользователя и спрашивает диапазон расстояний"""
     Req.range_price = message.text
-    bot.send_message(message.from_user.id, "Введите диапазон расстояний от центра")
+    bot.send_message(message.from_user.id,
+                     "Введите диапазон расстояний от центра")
     bot.register_next_step_handler(message, how_many_hotels)
 
 
@@ -43,7 +44,8 @@ def how_many_hotels(message):
         Req.range_dis = message.text
     else:
         Req.citi_name = message.text
-    bot.send_message(message.from_user.id, "Сколько отелей вывести в результат?")
+    bot.send_message(message.from_user.id,
+                     "Сколько отелей вывести в результат?")
     bot.register_next_step_handler(message, answer)
 
 
@@ -84,9 +86,11 @@ def answer(message):
             data += f'Name: {i_hotel.name}\nAddress: \t{i_hotel.address}\nDistance: ' \
                     f'{i_hotel.dist}\nPrice: {i_hotel.price}\n\n'
         if len(Req.citi_res) == 2:
-            bot.send_message(message.from_user.id, f'{Req.citi_res[0][26:-7]}, {Req.citi_res[1]}')
+            bot.send_message(message.from_user.id,
+                             f'{Req.citi_res[0][26:-7]}, {Req.citi_res[1]}')
         else:
-            bot.send_message(message.from_user.id, f'{Req.citi_res[0][26:-7]}, {Req.citi_res[1]},{Req.citi_res[2]}')
+            bot.send_message(
+                message.from_user.id, f'{Req.citi_res[0][26:-7]}, {Req.citi_res[1]},{Req.citi_res[2]}')
         bot.send_message(message.from_user.id, data)
     except Exception:
         bot.send_message(message.from_user.id, 'Error')
@@ -96,7 +100,8 @@ def answer(message):
 def get_text_messages(message):
     """Основной обработчик сообщений"""
     if message.text == "Привет" or message.text == "привет":
-        bot.send_message(message.from_user.id, "Привет, чем я могу тебе помочь?")
+        bot.send_message(message.from_user.id,
+                         "Привет, чем я могу тебе помочь?")
     elif message.text == "/help":
         bot.send_message(message.from_user.id, "/lowprice — вывод самых дешёвых отелей в городе\n"
                                                "/highprice — вывод самых дорогих отелей в городе\n"
@@ -104,7 +109,8 @@ def get_text_messages(message):
                                                "и расположению от центра")
 
     else:
-        bot.send_message(message.from_user.id, "Я тебя не понимаю. Напиши /help.")
+        bot.send_message(message.from_user.id,
+                         "Я тебя не понимаю. Напиши /help.")
 
 
 bot.polling(none_stop=True, interval=0)

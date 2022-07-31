@@ -1,0 +1,4 @@
+telebot
+dotenv
+os
+requests
