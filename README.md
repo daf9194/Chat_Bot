@@ -17,14 +17,14 @@
 1. Город, где будет проводиться поиск.
 2. Количество отелей, которые необходимо вывести в результате (не больше
 заранее определённого максимума).
-![Пример](https://gitlab.skillbox.ru/dmitrii_afonin/python_basic_diploma/-/raw/MR/gif_files/low.gif)
+![Пример](https://raw.githubusercontent.com/daf9194/Chat_Bot/main/gif_files/low.gif)
    
 ### Команда /highprice
 После ввода команды у пользователя запрашивается:
 1. Город, где будет проводиться поиск.
 2. Количество отелей, которые необходимо вывести в результате (не больше
 заранее определённого максимума).   
-![Пример](https://gitlab.skillbox.ru/dmitrii_afonin/python_basic_diploma/-/raw/MR/gif_files/high.gif)
+![Пример](https://raw.githubusercontent.com/daf9194/Chat_Bot/main/gif_files/high.gif)
    
 ### Команда /bestdeal
 После ввода команды у пользователя запрашивается:
