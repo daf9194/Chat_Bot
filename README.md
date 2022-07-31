@@ -33,7 +33,7 @@
 3. Диапазон расстояния, на котором находится отель от центра.
 4. Количество отелей, которые необходимо вывести в результате (не больше
 заранее определённого максимума).
-![Пример](https://gitlab.skillbox.ru/dmitrii_afonin/python_basic_diploma/-/raw/MR/gif_files/bestdeal.gif)
+![Пример](https://raw.githubusercontent.com/daf9194/Chat_Bot/main/gif_files/bestdeal.gif)
 
 ### Команда /help
 /help - помощь по командам бота
