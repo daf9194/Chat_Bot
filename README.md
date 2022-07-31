@@ -47,4 +47,5 @@
 5. Переходим по ссылке https://rapidapi.com/apidojo/api/hotels4/. Копируем содержимое поля `X-RapidAPI-Key` в файл проекта `.env` в одноименную строку.
 6. Установка необходимых Python-пакетов  
 `python3 -m pip install -r requirements.txt`
+7. Запуск скрипта `python3 main.py`
 
